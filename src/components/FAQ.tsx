@@ -23,14 +23,19 @@ const questions = [
       'Você pode tocar no botão de WhatsApp do site e enviar a mensagem automática para solicitar horários disponíveis para avaliação.',
   },
   {
+    question: 'Existe atendimento em domicílio?',
+    answer:
+      'Sim. A possibilidade é avaliada no agendamento, especialmente para pacientes com dificuldade de locomoção ou que preferem mais comodidade.',
+  },
+  {
     question: 'O atendimento é individual?',
     answer:
-      'Sim. O atendimento é conduzido de forma individualizada, com orientações e condutas ajustadas para cada paciente.',
+      'Sim. As sessões são conduzidas com orientações e condutas ajustadas para cada paciente.',
   },
   {
     question: 'Pilates já está disponível?',
     answer:
-      'No momento, a Dra. Daniele está divulgando principalmente os atendimentos de Fisioterapia e RPG. Novas modalidades poderão ser adicionadas futuramente.',
+      'No momento, a Dra. Daniele está divulgando as modalidades principais. Novas opções poderão ser adicionadas futuramente.',
   },
 ]
 
@@ -41,7 +46,7 @@ export default function FAQ() {
         <Reveal>
           <p className="eyebrow mb-5">Dúvidas</p>
           <h2 className="section-title">
-            Perguntas frequentes sobre Fisioterapia e RPG.
+            Perguntas frequentes antes de começar.
           </h2>
           <p className="section-copy mt-6">
             Respostas simples para facilitar o primeiro contato com a Dra. Daniele.

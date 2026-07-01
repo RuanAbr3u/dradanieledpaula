@@ -11,9 +11,8 @@ export default function Footer() {
               Dra. Daniele D'Paula
             </p>
             <p className="mt-3 max-w-md text-sm leading-7 text-white/65">
-              Fisioterapeuta, Crefito 186741-F. 
-              Atendimento em Fisioterapia e
-              RPG com cuidado individualizado.
+              Fisioterapeuta, Crefito 186741-F. Cuidado profissional para
+              movimento, postura e funcionalidade.
             </p>
           </div>
 

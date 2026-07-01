@@ -23,6 +23,9 @@ export default function CTA() {
                 Envie uma mensagem para agendar sua avaliação e entender como a
                 Fisioterapia e o RPG podem auxiliar na sua rotina de cuidado.
               </p>
+              <p className="mt-4 max-w-2xl text-sm font-semibold leading-7 text-white/68">
+                Também realizamos atendimento em domicílio mediante agendamento.
+              </p>
             </div>
 
             <a
@@ -38,7 +41,7 @@ export default function CTA() {
           </div>
 
           <div className="relative mt-12 grid gap-4 border-t border-white/12 pt-8 sm:grid-cols-3">
-            {['Crefito 186741-F', 'Fisioterapia', 'RPG'].map((item) => (
+            {['Crefito 186741-F', 'Planos sob medida', 'Domicílio com agendamento'].map((item) => (
               <div key={item} className="flex items-center gap-3 text-sm font-bold text-white/78">
                 <CalendarCheck size={18} className="text-[var(--color-gold-soft)]" aria-hidden="true" />
                 {item}

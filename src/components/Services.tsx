@@ -2,6 +2,7 @@ import {
   Activity,
   ClipboardCheck,
   HeartHandshake,
+  House,
   Move3D,
   Stethoscope,
   UserRoundCheck,
@@ -32,12 +33,17 @@ const services = [
   {
     icon: UserRoundCheck,
     title: 'Mobilidade e funcionalidade',
-    text: 'Atendimento voltado a movimentos mais seguros, autonomia e qualidade de vida.',
+    text: 'Sessões voltadas a movimentos mais seguros, autonomia e qualidade de vida.',
   },
   {
     icon: HeartHandshake,
     title: 'Acompanhamento individualizado',
     text: 'Plano de cuidado personalizado, com escuta e ajustes conforme a evolução de cada paciente.',
+  },
+  {
+    icon: House,
+    title: 'Atendimento domiciliar',
+    text: 'Atendimento realizado no conforto da sua casa, com a mesma qualidade, atenção e cuidado oferecidos em consultório.',
   },
 ]
 
@@ -49,11 +55,11 @@ export default function Services() {
         <Reveal className="max-w-3xl">
           <p className="eyebrow mb-5">Serviços</p>
           <h2 className="section-title">
-            Fisioterapia e RPG para apoiar movimento, postura e bem-estar.
+            Recursos para apoiar movimento, postura e bem-estar.
           </h2>
           <p className="section-copy mt-6">
-            Atendimentos conduzidos com avaliação profissional, técnica e cuidado
-            personalizado para as necessidades de cada paciente.
+            Cada conduta parte de uma escuta atenta e de critérios profissionais
+            para orientar o cuidado conforme as necessidades de cada paciente.
           </p>
         </Reveal>
 
@@ -64,7 +70,7 @@ export default function Services() {
               key={title}
               delay={index * 55}
               className={`group relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/58 p-7 shadow-sm backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:bg-white hover:shadow-[var(--shadow-soft)] ${
-                index === 1 || index === 4 ? 'lg:translate-y-8' : ''
+                index === 1 || index === 4 || index === 6 ? 'lg:translate-y-8' : ''
               }`}
             >
               <div className="absolute -right-12 -top-12 h-36 w-36 organic-shape bg-[var(--color-olive-soft)]/50 transition duration-500 group-hover:scale-125" />
