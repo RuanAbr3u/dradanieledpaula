@@ -1,11 +1,10 @@
 import {
   ArrowRight,
   BadgeCheck,
-  Camera,
   Check,
-  MessageCircle,
   ShieldCheck,
 } from 'lucide-react'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { INSTAGRAM_URL, WHATSAPP_URL } from '../config'
 import Reveal from './Reveal'
 
@@ -43,9 +42,12 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
               aria-label="Perguntar sobre avaliação pelo WhatsApp"
-              className="premium-button inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-petrol)] px-7 py-4 text-sm font-extrabold text-white shadow-[0_18px_50px_rgba(47,75,79,0.22)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+              className="premium-button group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-petrol)] px-7 py-4 text-sm font-extrabold text-white shadow-[0_18px_50px_rgba(47,75,79,0.22)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
             >
-              <MessageCircle size={19} aria-hidden="true" />
+              <FaWhatsapp
+                className="text-[20px] transition duration-300 group-hover:scale-105"
+                aria-hidden="true"
+              />
               Entender avaliação
             </a>
             <a
@@ -53,9 +55,12 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
               aria-label="Acessar Instagram da Dra. Daniele"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--color-line)] bg-white/72 px-7 py-4 text-sm font-extrabold text-[var(--color-ink)] shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-[var(--color-gold)]"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-[var(--color-line)] bg-white/72 px-7 py-4 text-sm font-extrabold text-[var(--color-ink)] shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-[var(--color-gold)]"
             >
-              <Camera size={19} aria-hidden="true" />
+              <FaInstagram
+                className="text-[20px] transition duration-300 group-hover:scale-105"
+                aria-hidden="true"
+              />
               Ver Instagram
             </a>
           </div>

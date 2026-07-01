@@ -1,4 +1,4 @@
-import { Camera, MessageCircle } from 'lucide-react'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { INSTAGRAM_URL, WHATSAPP_URL } from '../config'
 
 export default function Footer() {
@@ -28,8 +28,8 @@ export default function Footer() {
                 aria-label="Instagram da Dra. Daniele"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-white/72 transition hover:text-white"
               >
-                <Camera size={17} aria-hidden="true" />
-                @fisio.danieledepaula
+                <FaInstagram className="text-[17px]" aria-hidden="true" />
+                Instagram
               </a>
               <a
                 href={WHATSAPP_URL}
@@ -38,7 +38,7 @@ export default function Footer() {
                 aria-label="WhatsApp da Dra. Daniele"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-white/72 transition hover:text-white"
               >
-                <MessageCircle size={17} aria-hidden="true" />
+                <FaWhatsapp className="text-[17px]" aria-hidden="true" />
                 WhatsApp
               </a>
             </div>

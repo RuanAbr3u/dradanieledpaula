@@ -1,4 +1,5 @@
-import { CalendarCheck, MessageCircle, Sparkles } from 'lucide-react'
+import { CalendarCheck, Sparkles } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { WHATSAPP_URL } from '../config'
 import Reveal from './Reveal'
 
@@ -33,9 +34,12 @@ export default function CTA() {
               target="_blank"
               rel="noreferrer"
               aria-label="Agendar avaliação pelo WhatsApp"
-              className="premium-button inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-5 text-sm font-extrabold text-[var(--color-petrol)] shadow-[0_24px_70px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+              className="premium-button group inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-5 text-sm font-extrabold text-[var(--color-petrol)] shadow-[0_24px_70px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
             >
-              <MessageCircle size={20} aria-hidden="true" />
+              <FaWhatsapp
+                className="text-[20px] transition duration-300 group-hover:scale-105"
+                aria-hidden="true"
+              />
               Agendar avaliação
             </a>
           </div>
